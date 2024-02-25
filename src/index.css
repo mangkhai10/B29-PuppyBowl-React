@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #4e54c8; 
+  background-image: linear-gradient(315deg, #4e54c8 0%, #8f94fb 74%); 
+  color: #495057;
+}
+
+
+/* All Players */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 80px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  font-style: italic;
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.form-container label {
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  transition: border-color 0.3s ease;
+}
+
+.form-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.close-btn,
+.form-container button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover,
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.table-container th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.details-btn,
+.del-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover,
+.del-btn:hover {
+  background-color: #218838;
+}
+
+/* Player Details */
+.dialog {
+  width: 90%;
+  margin: 50px auto;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
